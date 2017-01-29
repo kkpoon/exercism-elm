@@ -3,7 +3,7 @@ module Raindrops exposing (raindrops)
 
 raindrops : Int -> String
 raindrops input =
-    List.range 1 input
+    [ 3, 5, 7 ]
         |> List.filter (\n -> rem input n == 0)
         |> List.map
             (\n ->
